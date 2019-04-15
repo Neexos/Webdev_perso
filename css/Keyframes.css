@@ -1,0 +1,78 @@
+/* COLORS: #c9c9c9 #e3e3e3 #9ad3de #89bdd3 */
+
+body {
+    margin: 0;
+    background-color: #c9c9c9;
+}
+/*https://cdn.dribbble.com/users/372480/screenshots/1975846/zedazeni-loader-2.gif
+https://img.icons8.com/material-rounded/96/000000/musical-notes.png
+https://mir-s3-cdn-cf.behance.net/project_modules/disp/78591f22586091.56315ad49752c.gif*/
+#load {
+    background: url('https://media.giphy.com/media/X530jPOZXRMwo/giphy.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .9;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+}
+
+#waveform {
+    background-color: #000;
+    display: block;
+}
+
+#like{
+    filter: contrast(100%) invert(0%) sepia(0%) saturate(0%);
+}
+#musicLoading{
+    width: 100% !important;
+    height: 25px !important;
+}
+.musicControls{
+    display: inline-block;
+    padding: 5px;
+    background-color: #9ad3de;
+    border-color: #000;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    animation: test 1s infinite linear;
+}
+
+@keyframes test {
+    0%, 100%{
+        border-top-color: #c9c9c9;
+        border-right-color: #e3e3e3;
+        border-bottom-color: #9ad3de;
+        border-left-color: #89bdd3;
+    }
+    25%{
+        border-top-color: #89bdd3;
+        border-right-color: #c9c9c9;
+        border-bottom-color: #e3e3e3;
+        border-left-color: #9ad3de;
+    }
+    50%{
+        border-top-color: #9ad3de;
+        border-right-color: #89bdd3;
+        border-bottom-color: #c9c9c9;
+        border-left-color: #e3e3e3;
+    }
+    75%{
+        border-top-color: #e3e3e3;
+        border-right-color: #9ad3de;
+        border-bottom-color: #89bdd3;
+        border-left-color: #c9c9c9;
+    }
+}
+
+.musicControls img{
+    display: inline-block;
+}
+img{
+    cursor: pointer;
+}
+
+
