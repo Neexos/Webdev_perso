@@ -57,6 +57,7 @@ function draw() {
 
     for(let j = 0; j < row; j++){
       curves[j][i].setX(cx + x);
+
     }
   }
 
@@ -90,7 +91,8 @@ function draw() {
       curves[j][i].show();
     }
   }
-  angle += 0.01;
+  angle -= 0.01;
+
   if(angle < -TWO_PI){
     for (let j = 0; j < row; j++){
       for (let i = 0; i < col; i++){
